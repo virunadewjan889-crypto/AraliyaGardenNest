@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araliya Garden Nest</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial, sans-serif;background:#111;color:#fff}
+
+/* HEADER */
+header{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.8);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+z-index:1000;
+}
+
+.logo{font-size:22px;font-weight:bold;color:gold}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu-toggle{display:none;color:white;font-size:22px;cursor:pointer}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url("38700.jpg") center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{font-size:60px;color:gold;margin-bottom:10px}
+.hero p{font-size:20px;margin-bottom:20px}
+
+.btn{
+background:gold;
+color:black;
+padding:12px 25px;
+margin:8px;
+border-radius:6px;
+display:inline-block;
+font-weight:bold;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{background:#d4af37}
+
+/* SLIDER */
+.slider{
+position:relative;
+max-width:100%;
+height:400px;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+opacity:0;
+transition:1s;
+}
+
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.active{opacity:1}
+
+/* SECTION */
+.section{padding:80px 20px;text-align:center}
+
+.gallery img{
+width:280px;
+margin:10px;
+border-radius:8px;
+}
+
+/* FORM */
+form input, form textarea{
+width:90%;
+max-width:400px;
+padding:10px;
+margin:8px;
+border:none;
+border-radius:5px;
+}
+
+form button{
+background:gold;
+border:none;
+padding:10px 20px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+nav{display:none;flex-direction:column;background:#000;width:100%;position:absolute;top:60px;left:0}
+nav a{margin:15px}
+.menu-toggle{display:block}
+.show{display:flex}
+.hero h1{font-size:35px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo"><i class="fa-solid fa-house"></i> Araliya Garden Nest</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav id="menu">
+<a href="#photos">Photos</a>
+<a href="#reviews">Reviews</a>
+<a href="#booking">Booking</a>
+<a href="https://www.google.com/maps/place/Araliya+Garden+Nest/@6.7624243,80.8908035,17z/data=!4m20!1m10!3m9!1s0x3ae477007528ff29:0xe9cb24d0e3f1eec1!2sAraliya+Garden+Nest!5m2!4m1!1i2!8m2!3d6.7624243!4d80.8933784!16s%2Fg%2F11n3cthzjv!3m8!1s0x3ae477007528ff29:0xe9cb24d0e3f1eec1!5m2!4m1!1i2!8m2!3d6.7624243!4d80.8933784!16s%2Fg%2F11n3cthzjv?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+<i class="fa-solid fa-location-dot"></i> Location
+</a>
+</nav>
+</header>
+
+<section class="hero">
+  <h1>Luxury Nature Escape</h1>
+  <p>Relax • Nature • Comfort</p>
+
+  <a href="tel:+94714863963" class="btn">
+     <i class="fa-solid fa-phone"></i> Call
+  </a>
+
+  <a href="virunadewjan889@gmail.com" class="btn">
+     <i class="fa-solid fa-envelope"></i> Email
+  </a>
+
+  <a href="https://www.google.com/maps/place/Araliya+Garden+Nest/@6.7624243,80.8908035,17z" 
+   target="_blank" 
+   class="btn">
+   <i class="fa-solid fa-map-location-dot"></i> Location
+</a>
+
+
+  <a href="https://wa.me/94714863963?text=Hello%20I%20want%20to%20book%20a%20stay" target="_blank" class="btn">
+     <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdaED8nwsq4mJH4gU7_xcjhovexVgkAHMnBAJSSfOkFRMF0XQ/viewform?usp=dialog" target="_blank" class="btn">
+   <i class="fa-solid fa-calendar-days"></i> Book Now
+</a>
+
+</section>
+
+
+<!-- SLIDER -->
+<div class="slider">
+<div class="slide active">
+<img src="36024.jpg">
+</div>
+<div class="slide">
+<img src="36023.jpg">
+</div>
+<div class="slide">
+<img src="36021.jpg">
+</div>
+</div>
+
+<!-- PHOTOS -->
+<section id="photos" class="section">
+<h2 style="color:gold">Our Gallery</h2>
+<div class="gallery">
+<img src="36019.jpg">
+<img src="36024.jpg">
+<img src="36022.jpg">
+<img src="36016.jpg">
+<img src="36021.jpg">
+<img src="36018.jpg">
+<img src="36020.jpg">
+<img src="38700.jpg">
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+<h2 style="color:gold">Guest Reviews</h2>
+<p>⭐️⭐️⭐️⭐️⭐️ Amazing stay! – Nimal</p>
+<p>⭐️⭐️⭐️⭐️ Beautiful location – Kasun</p>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+<h2 style="color:gold">Book Your Stay</h2>
+<form action="mailto:info@virucabana.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required><br>
+<input type="date" name="date" required><br>
+<textarea name="message" placeholder="Your Message"></textarea><br>
+<button type="submit">Send Booking</button>
+</form>
+</section>
+
+<section class="section">
+  <h2 style="color:gold">Our Location</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.321672728408!2d80.89118931524253!3d6.76242432452551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae477007528ff29%3A0xe9cb24d0e3f1eec1!2sAraliya%20Garden%20Nest!5e0!3m2!1sen!2slk!4v1708340528296!5m2!1sen!2slk" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+© 2026 Viru Luxury Cabana | All Rights Reserved
+</footer>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let index=0;
+
+function showSlide(){
+slides.forEach(s=>s.classList.remove("active"));
+index++;
+if(index>slides.length-1){index=0}
+slides[index].classList.add("active");
+}
+setInterval(showSlide,3000);
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
